@@ -30,3 +30,44 @@ let newArr = arr.map((value, index) => {
 });
 
 console.log("New array elements:" + newArr);
+
+console.log("Rest / Spread Parameter Demonstration:");
+
+let stds = [{name: "John", marks: 85}, {name: "Jane", marks: 90}, {name: "Jim", marks: 78}];
+
+let filterStudents = stds.map((student, index) => {
+    {
+        if(student.marks > 80){
+            return {...student, remarks: "Excellent"}; // Spread operator to create a new object with updated marks
+        }
+        return student;
+    }
+
+});
+
+console.log("Filtered Students:", filterStudents);
+
+// Spread operator to combine two arrays
+// Spread operator is used to expand elements of an iterable (like an array) into individual elements.
+// Here, we are combining arrA and arrB into a new array combinedArr.
+// The '...' syntax is the spread operator.
+// Example:
+let arrA = [1, 2, 3];
+let arrB = [4, 5, 6];
+let combinedArr = [...arrA, ...arrB];
+console.log("Combined Array:", combinedArr);
+
+for( let i of combinedArr){
+    console.log(i);
+}
+
+// Rest operator is used to collect multiple elements into a single array parameter.
+// Destructuring assignment with rest operator
+// Here, 'a', 'b', and 'c' will take the first three elements of combinedArr,
+// and '...rest' will collect the remaining elements into an array.
+// Example:
+let [a,b,c,...rest] = combinedArr; 
+console.log("a:", a);
+console.log("b:", b);
+console.log("c:", c);
+console.log("rest:", rest);
