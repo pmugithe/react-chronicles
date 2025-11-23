@@ -33,9 +33,16 @@ console.log("New array elements:" + newArr);
 
 console.log("Rest / Spread Parameter Demonstration:");
 
-let stds = [{name: "John", marks: 85}, {name: "Jane", marks: 90}, {name: "Jim", marks: 78}];
+let stds = [{name: "John", marks: 85}, 
+    {name: "Jane", marks: 90}, 
+    {name: "Jim", marks: 78},
+    {name: "Jill", marks: 92},
+    {name: "Jack", marks: 67},
+    {name: "Jenny", marks: 88}];
 
-let filterStudents = stds.map((student, index) => {
+let filterStudents = stds
+.filter(student => student.marks > 80) // Filter students with marks greater than 80
+.map((student, index) => {
     {
         if(student.marks > 80){
             return {...student, remarks: "Excellent"}; // Spread operator to create a new object with updated marks
@@ -60,6 +67,15 @@ console.log("Combined Array:", combinedArr);
 for( let i of combinedArr){
     console.log(i);
 }
+let combArr = [arrA + arrB];
+console.log("Combined Array without Spread:", combArr, typeof combArr);
+let combArr1 = [arrA, arrB];
+console.log("Combined Array without Spread:", combArr1, typeof(combArr1));
+
+console.log("combinedArr :", combinedArr, typeof combinedArr);
+
+
+
 
 // Rest operator is used to collect multiple elements into a single array parameter.
 // Destructuring assignment with rest operator
@@ -71,3 +87,16 @@ console.log("a:", a);
 console.log("b:", b);
 console.log("c:", c);
 console.log("rest:", rest);
+
+// Rest parameter in function
+function sumAll(a,b, ...remainingNumbers){
+    let sum = a + b;
+    for (let num of remainingNumbers) {
+        sum += num;
+    }
+    return sum;
+}
+
+let total = sumAll(1, 2, 3, 4, 5);
+console.log("Total Sum:", total);
+console.log(`Result = ${sumAll(10, 20, 30, 40, 50)}`);
