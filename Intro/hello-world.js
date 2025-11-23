@@ -16,4 +16,4 @@ for (let i1 = 0; i1 < 5; i1++) {
     console.log(i1);
 }
 
-console.log(i1); // ReferenceError: i1 is not defined
+//console.log(i1); // ReferenceError: i1 is not defined

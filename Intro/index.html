@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World from React</title>
     <script src="./hello-world.js"></script>
+    <script src="./person.js"></script>
+    
 </head>
 <body>
+    <script type="module">
+        import { Employee} from './employee.js';
+        let emp1 = new Employee(2, "Developer");
+        emp1.showDetails();
+    </script>
     <h1>Hello World from React</h1>
+    <input id="btn" type="button" value="Click Me" />
+    <script type="module">
+        import { clickedMe } from './clickedme.js';
+        clickedMe();
+    </script>
 </body>
 </html>
