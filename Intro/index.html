@@ -20,5 +20,14 @@
         import { clickedMe } from './clickedme.js';
         clickedMe();
     </script>
+    <script type="module">
+        import { fruit } from './fruit.js';
+        import { clickedMe } from './clickedme.js';
+            //document.getElementById("btn").addEventListener("click", clickedMe);
+            console.log("Button was clicked, now manipulating strings.");
+            var fr = new fruit();
+            //fr.generateFruit();
+            fr.stringsManipulation();   
+    </script>
 </body>
 </html>

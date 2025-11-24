@@ -1,6 +1,6 @@
 export function clickedMe() {
-    document.getElementById("btn").addEventListener("click", function(c) {
+    document.getElementById("btn").addEventListener("click", (event) => {
         alert("Button Clicked!");
-        c.target.value = "Clicked";
+        event.target.value = "Clicked";
     });
 }

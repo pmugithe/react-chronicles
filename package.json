@@ -1,4 +1,11 @@
 {
+  "type": "module",
+  "scripts": {
+    "start": "lite-server --baseDir=Intro",
+    "run:hello": "node Intro/hello-world.js",
+    "run:array": "node Intro/array.js",
+    "run:fruit": "node Intro/fruit.js"
+  },
   "dependencies": {
     "lite-server": "^2.6.1"
   }
