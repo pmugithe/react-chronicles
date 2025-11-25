@@ -15,8 +15,16 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-### Date: 11-24-2025 | Databinding and Virutal DOM | Life Cycle Hooks.
+### Date: 11-24-2025 | Databinding and Virutal DOM.
 
 ##### Data Binding:
+
 - Data Binding, binds components from parent to child, React primarily uses one-way data binding, where data flows from parent to child components via props
-- 
+- This one-way data flow helps maintain a clear structure in the application. This ensures a predictable data flow and makes the application easier to debug and maintain. React also supports two-way data binding through controlled components,
+
+##### Virtual DOM:
+
+- It is a Memory representation of you real DOM - Tree.
+- Maintains 2 DOMs and based on the comparision, react will patches or updates the changes onto the real DOM and saves it.
+
+## Life Cycel Hooks:
