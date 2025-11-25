@@ -56,3 +56,12 @@ useState returns an array with exactly two values:
 
 1. The current state. During the first render, it will match the initialState you have passed.
 2. The set function that lets you update the state to a different value and trigger a re-render.
+
+## 2. useEffect()
+
+Componnents needs to pass or sync data with external systems and for you to do it, you'd need some hook that lets you sync it for you, that is **useEffect()**.
+
+- Some components need to synchronize with external systems. 
+- For example, you might want to control a non-React component based on the React state, set up a server connection, or send an analytics log when a component appears on the screen. 
+- **Effects let you run some code after rendering so that you can synchronize your component with some system outside of React.**
+
