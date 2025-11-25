@@ -41,5 +41,18 @@ const timer= () => time.Now();
 
 ## 1. useState()
 
-* useSate() hook is method that let's you track the state in functional component. 
-* 
+The **useState()** Hook provides main two things:
+
+1. A **state variable** to retain the data between renders.
+2. A **state setter function** to update the variable and trigger **React** to render the component again.
+
+- useSate() hook is method that let's you track the state (refers to data or properties in FC) in functional component. 
+- component-specific memory is called state.
+
+```
+const [state, setState] = useState(initialState) // initialState: The value you want the state to be initially. It can be a value of any type.
+```
+useState returns an array with exactly two values:
+
+1. The current state. During the first render, it will match the initialState you have passed.
+2. The set function that lets you update the state to a different value and trigger a re-render.
