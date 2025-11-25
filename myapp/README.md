@@ -17,7 +17,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ### Date: 11-24-2025 | Databinding and Virutal DOM.
 
-##### Data Binding:
+# Data Binding:
 
 - Data Binding, binds components from parent to child, React primarily uses one-way data binding, where data flows from parent to child components (component state to UI) via props. aka Properties
 - Props in React are the objects used to pass data/information to a Component. It is short for Properties.
