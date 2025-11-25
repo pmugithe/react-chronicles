@@ -17,7 +17,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # Date: 11-24-2025 | Databinding and Virutal DOM.
 
-### Data Binding:
+## Data Binding:
 
 - Data Binding, binds components from parent to child, React primarily uses one-way data binding, where data flows from parent to child components (component state to UI) via props. aka Properties
 - Props in React are the objects used to pass data/information to a Component. It is short for Properties.
@@ -27,7 +27,7 @@ Two Types of Binding:
 1. One Way Binding - Let's you bind from Parent to child, Event Binding is one way Binding
 2. Two Way Binding - In two-way data binding, data flows in both directions. This means that the changes in the UI (like user input) are reflected in the component’s *state*, and changes in the state are automatically reflected in the UI. Always state, or life cycle hooks. [GeekForGeeks-types-of-binding](https://www.geeksforgeeks.org/reactjs/reactjs-data-binding/#)
 
-##### Virtual DOM:
+## Virtual DOM:
 
 - It is a Memory representation of you real DOM - Tree.
 - Maintains 2 DOMs and based on the comparision, react will patches or updates the changes onto the real DOM and saves it.
