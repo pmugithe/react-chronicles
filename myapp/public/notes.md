@@ -35,3 +35,5 @@ function timer(){
 
 Arrow function: 
 const timer= () => time.Now();
+
+## Hooks 
