@@ -18,13 +18,16 @@ function Databinding() {
   // Here, fullName is the state variable, setFullName is the function to update it, and "John Doe" is the initial value.
   // When the state changes, the component re-renders to reflect the new state.
   // This is an example of one-way data binding in React, where the UI reflects the state.
-  const [fullName, setFullName] = useState("John Doe");
+  const exampleName = "Jane Smith";
+  // Destructuring assignment to create a state variable 'fullName' and a function 'setFullName' to update it.
+  // same like get and set method in other programming languages.
+  const [fullName, setFullName] = useState(exampleName);
 
   // useState is a Hook that lets you add React state to functional components.
   // When you call useState, it returns an array with two elements:
   // 1. The current state value.
   // 2. A function that lets you update the state.
-  
+
   const handleClick = (e) => {
     e.target.value = "Submitted";
     e.target.style.backgroundColor = "green";
@@ -36,8 +39,15 @@ function Databinding() {
     }, 5000);
     //alert(`Hello, ${name}!`);
   };
-  const handleNameChange = (e) => {
+  // So basically, when we want to use the useState hook, we have to handle the change event and update the state accordingly.
+  const handleNameChange = (e,str) => {
+    let flag = false
     setFullName(e.target.value);
+    flag = true;
+    if(flag){
+        alert(`Do you want to continue? Message Passed is: ${str} and Name is: ${e.target.value}`);
+    }
+    
     // Update the state or perform any other logic here
   };
 
@@ -88,7 +98,7 @@ function Databinding() {
           type="text"
           placeholder="Enter your name"
           value={fullName}
-          onChange={(e) => handleNameChange(e)}
+          onChange={(e) => handleNameChange(e,"Hello")}
         />
         <input type="button" value="Submit" onClick={(e) => handleClick(e)} />
 
