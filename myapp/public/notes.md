@@ -39,4 +39,7 @@ Arrow function:
 const timer= () => time.Now();
 ```
 
-## Hooks 
+## 1. useState()
+
+* useSate() hook is method that let's you track the state in functional component. 
+* 
