@@ -38,3 +38,42 @@ Two Types of Binding:
 
 Hooks provide a way to manage state, perform side effects, and reuse stateful logic without the need for class components by using functional components and hooks should be called only at the top level of an FC (Functional Component) at the top.
 
+- Hooks are nothing but a newly added features in React and are basically a new Methods.
+- Hooks contains Life Cycle Methods.
+
+Basic Hooks:
+1. useState()
+2. useEffect()
+3. useContext()
+
+Advanced Hooks:
+1. useRef()
+2. useReducer()
+3. useSelector()
+4. useDispatch()
+5. useMemo()
+6. useCallback()
+7. useId()
+
+Hooks for React Routing: To Implement Routing using React.
+
+When developing a SPA, routing is all you need and you can use these methods to achieve it. Using this React Routing concept, we can easily build a SPAs.
+
+1. useHistory()
+2. useParams()
+3. useLocation()
+4. useRouteMatch()
+
+Why do we need Hooks and When to use Hooks?
+
+- Using hooks, WE CAN achieve all these inside Functional Components (FCs)
+    1. we can maintain state in functional components, (earlier, we will not be able to maintain state inside FC, but now we can using the HOOKS)
+    2. fetch and consume data from APIs
+    3. we can get updated state from Redux store
+    4. to implement React Routing (that is to implement SPA)
+
+Rules to Follow:
+1. Call hooks from React Functions only
+2. Call Hooks only at the top-level, *DON'T CALL INSIDE LOOPS, CONDITIONS, NESTED FUNCTIONS AND CLASS COMPONENTS*
+
+
