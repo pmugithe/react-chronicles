@@ -76,5 +76,5 @@ Rules to Follow:
 1. Call hooks from React Functions only
 2. Call Hooks only at the top-level, *DON'T CALL INSIDE LOOPS, CONDITIONS, NESTED FUNCTIONS AND CLASS COMPONENTS*
 
-More on Hooks in [Notes](./public/notes.txt)
+More on Hooks in [Notes](./public/notes.md)
 
