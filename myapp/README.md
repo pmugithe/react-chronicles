@@ -15,9 +15,9 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-### Date: 11-24-2025 | Databinding and Virutal DOM.
+# Date: 11-24-2025 | Databinding and Virutal DOM.
 
-# Data Binding:
+### Data Binding:
 
 - Data Binding, binds components from parent to child, React primarily uses one-way data binding, where data flows from parent to child components (component state to UI) via props. aka Properties
 - Props in React are the objects used to pass data/information to a Component. It is short for Properties.
